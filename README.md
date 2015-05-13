@@ -1,3 +1,5 @@
 # TristanBrismontier.github.io
 github.io
-SpaceShooter (Unity Tutorial)  : http://tristanbrismontier.github.io/SpaceShooter.html
+I'm Tristan a Java developper, and I explore interactive sketch,
+procedural/auto-generating design, and physics in virtual world.
+I mainly use Processing/java, and recently Unity.
