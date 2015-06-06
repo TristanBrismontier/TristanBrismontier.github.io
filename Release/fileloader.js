@@ -15,8 +15,8 @@ Module.expectedDataFileDownloads++;
       // worker
       PACKAGE_PATH = encodeURIComponent(location.pathname.toString().substring(0, location.pathname.toString().lastIndexOf('/')) + '/');
     }
-    var PACKAGE_NAME = 'Barnes.data';
-    var REMOTE_PACKAGE_BASE = 'Barnes.data';
+    var PACKAGE_NAME = 'GamJam.data';
+    var REMOTE_PACKAGE_BASE = 'GamJam.data';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       Module.printErr('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -24,8 +24,8 @@ Module.expectedDataFileDownloads++;
     var REMOTE_PACKAGE_NAME = typeof Module['locateFile'] === 'function' ?
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
-    var REMOTE_PACKAGE_SIZE = 2157217;
-    var PACKAGE_UUID = '184ceaf2-8a8f-4b48-8b13-d9f568c64ff3';
+    var REMOTE_PACKAGE_SIZE = 98109697;
+    var PACKAGE_UUID = '0cdae9ae-5955-4517-a336-1df2290cb1ce';
   
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -123,11 +123,12 @@ Module['FS_createPath']('/', 'Resources', true, true);
         this.requests[this.name] = null;
       },
     };
-      new DataRequest(0, 20076, 0, 0).open('GET', '/mainData');
-    new DataRequest(20076, 20097, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
-    new DataRequest(20097, 82737, 0, 0).open('GET', '/sharedassets0.assets');
-    new DataRequest(82737, 1643109, 0, 0).open('GET', '/Resources/unity_default_resources');
-    new DataRequest(1643109, 2157217, 0, 0).open('GET', '/Resources/unity_builtin_extra');
+      new DataRequest(0, 58528, 0, 0).open('GET', '/mainData');
+    new DataRequest(58528, 58549, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
+    new DataRequest(58549, 91298721, 0, 0).open('GET', '/sharedassets0.assets');
+    new DataRequest(91298721, 96035217, 0, 0).open('GET', '/sharedassets0.resource');
+    new DataRequest(96035217, 97595589, 0, 0).open('GET', '/Resources/unity_default_resources');
+    new DataRequest(97595589, 98109697, 0, 0).open('GET', '/Resources/unity_builtin_extra');
 
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
@@ -140,12 +141,13 @@ Module['FS_createPath']('/', 'Resources', true, true);
           DataRequest.prototype.requests["/mainData"].onload();
           DataRequest.prototype.requests["/methods_pointedto_by_uievents.xml"].onload();
           DataRequest.prototype.requests["/sharedassets0.assets"].onload();
+          DataRequest.prototype.requests["/sharedassets0.resource"].onload();
           DataRequest.prototype.requests["/Resources/unity_default_resources"].onload();
           DataRequest.prototype.requests["/Resources/unity_builtin_extra"].onload();
-          Module['removeRunDependency']('datafile_Barnes.data');
+          Module['removeRunDependency']('datafile_GamJam.data');
 
     };
-    Module['addRunDependency']('datafile_Barnes.data');
+    Module['addRunDependency']('datafile_GamJam.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
