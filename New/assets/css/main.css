@@ -65,48 +65,48 @@
 
 	.container.\31 25\25 {
 		width: 100%;
-		max-width: 1200px;
-		min-width: 960px;
+		max-width: 56.25em;
+		min-width: 45em;
 	}
 
 	.container.\37 5\25 {
-		width: 720px;
+		width: 33.75em;
 	}
 
 	.container.\35 0\25 {
-		width: 480px;
+		width: 22.5em;
 	}
 
 	.container.\32 5\25 {
-		width: 240px;
+		width: 11.25em;
 	}
 
 	.container {
-		width: 960px;
+		width: 45em;
 	}
 
-	@media screen and (max-width: 1800px) {
+	@media screen and (max-width: 1680px) {
 
 		.container.\31 25\25 {
 			width: 100%;
-			max-width: 1200px;
-			min-width: 960px;
+			max-width: 56.25em;
+			min-width: 45em;
 		}
 
 		.container.\37 5\25 {
-			width: 720px;
+			width: 33.75em;
 		}
 
 		.container.\35 0\25 {
-			width: 480px;
+			width: 22.5em;
 		}
 
 		.container.\32 5\25 {
-			width: 240px;
+			width: 11.25em;
 		}
 
 		.container {
-			width: 960px;
+			width: 45em;
 		}
 
 	}
@@ -115,50 +115,50 @@
 
 		.container.\31 25\25 {
 			width: 100%;
-			max-width: 1200px;
-			min-width: 960px;
+			max-width: 52.5em;
+			min-width: 42em;
 		}
 
 		.container.\37 5\25 {
-			width: 720px;
+			width: 31.5em;
 		}
 
 		.container.\35 0\25 {
-			width: 480px;
+			width: 21em;
 		}
 
 		.container.\32 5\25 {
-			width: 240px;
+			width: 10.5em;
 		}
 
 		.container {
-			width: 960px;
+			width: 42em;
 		}
 
 	}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 1024px) {
 
 		.container.\31 25\25 {
 			width: 100%;
-			max-width: 1200px;
-			min-width: 960px;
+			max-width: 106.25%;
+			min-width: 85%;
 		}
 
 		.container.\37 5\25 {
-			width: 720px;
+			width: 63.75%;
 		}
 
 		.container.\35 0\25 {
-			width: 480px;
+			width: 42.5%;
 		}
 
 		.container.\32 5\25 {
-			width: 240px;
+			width: 21.25%;
 		}
 
 		.container {
-			width: 960px;
+			width: 85% !important;
 		}
 
 	}
@@ -167,53 +167,89 @@
 
 		.container.\31 25\25 {
 			width: 100%;
-			max-width: 1200px;
-			min-width: 960px;
+			max-width: 112.5%;
+			min-width: 90%;
 		}
 
 		.container.\37 5\25 {
-			width: 720px;
+			width: 67.5%;
 		}
 
 		.container.\35 0\25 {
-			width: 480px;
+			width: 45%;
 		}
 
 		.container.\32 5\25 {
-			width: 240px;
+			width: 22.5%;
 		}
 
 		.container {
-			width: 960px;
+			width: 90% !important;
 		}
 
 	}
+
+	/* Features */
+
+	.features article {
+		border-top: solid 3px #f4f4f4;
+		margin-bottom: 2.25em;
+		padding-top: 2.25em;
+	}
+
+		.features article:first-child {
+			border-top: 0;
+			padding-top: 0;
+		}
+
+		.features article .image {
+			display: inline-block;
+			padding-right: 2.5em;
+			vertical-align: middle;
+			width: 48%;
+		}
+
+			.features article .image img {
+				display: block;
+				width: 100%;
+			}
+
+		.features article .inner {
+			display: inline-block;
+			vertical-align: middle;
+			width: 50%;
+		}
+
+			.features article .inner > :last-child {
+				margin-bottom: 0;
+			}
 
 	@media screen and (max-width: 480px) {
 
 		.container.\31 25\25 {
 			width: 100%;
-			max-width: 1200px;
-			min-width: 960px;
+			max-width: 112.5%;
+			min-width: 90%;
 		}
 
 		.container.\37 5\25 {
-			width: 720px;
+			width: 67.5%;
 		}
 
 		.container.\35 0\25 {
-			width: 480px;
+			width: 45%;
 		}
 
 		.container.\32 5\25 {
-			width: 240px;
+			width: 22.5%;
 		}
 
 		.container {
-			width: 960px;
+			width: 90% !important;
 		}
 
 	}
+
 
 /* Grid */
 
@@ -1711,6 +1747,35 @@
 
 /* Section/Article */
 
+	/* Section/Article */
+
+			header br {
+				display: none;
+			}
+
+			header.major h2 {
+				font-size: 2.5em;
+			}
+
+				header.major h2 + p {
+					font-size: 1.5em;
+				}
+
+		/* Features */
+
+			.features article .image {
+				display: block;
+				margin: 0 0 2.25em 0;
+				padding-right: 0;
+				width: 100%;
+			}
+
+			.features article .inner {
+				display: block;
+				width: 100%;
+			}
+
+
 	section.special, article.special {
 		text-align: center;
 	}
@@ -2095,7 +2160,7 @@
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 2em 0;
+		margin: 0 0 2.25em 0;
 		padding-left: 1.25em;
 	}
 
@@ -2105,7 +2170,7 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 2.25em 0;
 		padding-left: 1em;
 	}
 
@@ -2119,13 +2184,51 @@
 		}
 
 			ul.alt li {
-				border-top: solid 2px #efefef;
+				border-top: solid 2px #f4f4f4;
 				padding: 0.5em 0;
 			}
 
 				ul.alt li:first-child {
 					border-top: 0;
 					padding-top: 0;
+				}
+
+		ul.feature-icons {
+			list-style: none;
+			padding-left: 0;
+		}
+
+			ul.feature-icons li {
+				text-decoration: none;
+				display: inline-block;
+				margin: 0 0 1.6875em 0;
+				padding: 0.35em 0 0 3.5em;
+				position: relative;
+				vertical-align: top;
+				width: 48%;
+			}
+
+				ul.feature-icons li:before {
+					-moz-osx-font-smoothing: grayscale;
+					-webkit-font-smoothing: antialiased;
+					font-family: FontAwesome;
+					font-style: normal;
+					font-weight: normal;
+					text-transform: none !important;
+				}
+
+				ul.feature-icons li:before {
+					background: #4acaa8;
+					border-radius: 100%;
+					color: #ffffff;
+					display: block;
+					height: 2.5em;
+					left: 0;
+					line-height: 2.5em;
+					position: absolute;
+					text-align: center;
+					top: 0;
+					width: 2.5em;
 				}
 
 		ul.icons {
@@ -2140,11 +2243,11 @@
 			}
 
 				ul.icons li:last-child {
-					padding-right: 0;
+					padding-right: 0 !important;
 				}
 
 				ul.icons li .icon:before {
-					font-size: 1.5em;
+					font-size: 1.25em;
 				}
 
 		ul.actions {
@@ -2155,7 +2258,7 @@
 
 			ul.actions li {
 				display: inline-block;
-				padding: 0 1em 0 0;
+				padding: 0 1.125em 0 0;
 				vertical-align: middle;
 			}
 
@@ -2164,12 +2267,12 @@
 				}
 
 			ul.actions.small li {
-				padding: 0 0.5em 0 0;
+				padding: 0 0.5625em 0 0;
 			}
 
 			ul.actions.vertical li {
 				display: block;
-				padding: 1em 0 0 0;
+				padding: 1.125em 0 0 0;
 			}
 
 				ul.actions.vertical li:first-child {
@@ -2181,7 +2284,7 @@
 				}
 
 			ul.actions.vertical.small li {
-				padding: 0.5em 0 0 0;
+				padding: 0.5625em 0 0 0;
 			}
 
 				ul.actions.vertical.small li:first-child {
@@ -2190,15 +2293,15 @@
 
 			ul.actions.fit {
 				display: table;
-				margin-left: -1em;
+				margin-left: -1.125em;
 				padding: 0;
 				table-layout: fixed;
-				width: calc(100% + 1em);
+				width: calc(100% + 1.125em);
 			}
 
 				ul.actions.fit li {
 					display: table-cell;
-					padding: 0 0 0 1em;
+					padding: 0 0 0 1.125em;
 				}
 
 					ul.actions.fit li > * {
@@ -2206,45 +2309,16 @@
 					}
 
 				ul.actions.fit.small {
-					margin-left: -0.5em;
-					width: calc(100% + 0.5em);
+					margin-left: -0.5625em;
+					width: calc(100% + 0.5625em);
 				}
 
 					ul.actions.fit.small li {
-						padding: 0 0 0 0.5em;
+						padding: 0 0 0 0.5625em;
 					}
 
-		ul.labeled-icons {
-			list-style: none;
-			padding: 0;
-		}
-
-			ul.labeled-icons li {
-				line-height: 1.75em;
-				margin: 1.5em 0 0 0;
-				padding-left: 2.25em;
-				position: relative;
-			}
-
-				ul.labeled-icons li:first-child {
-					margin-top: 0;
-				}
-
-				ul.labeled-icons li a {
-					color: inherit;
-				}
-
-				ul.labeled-icons li h3 {
-					color: #b2b2b2;
-					left: 0;
-					position: absolute;
-					text-align: center;
-					top: 0;
-					width: 1em;
-				}
-
 	dl {
-		margin: 0 0 2em 0;
+		margin: 0 0 2.25em 0;
 	}
 
 /* Table */
@@ -2255,18 +2329,18 @@
 	}
 
 	table {
-		margin: 0 0 2em 0;
+		margin: 0 0 2.25em 0;
 		width: 100%;
 	}
 
 		table tbody tr {
-			border: solid 1px #efefef;
+			border: solid 2px #f4f4f4;
 			border-left: 0;
 			border-right: 0;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: #f7f7f7;
+				background-color: #fafafa;
 			}
 
 		table td {
@@ -2274,19 +2348,19 @@
 		}
 
 		table th {
-			color: #787878;
+			color: #777;
 			font-size: 0.9em;
-			font-weight: 400;
+			font-weight: 700;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
 
 		table thead {
-			border-bottom: solid 2px #efefef;
+			border-bottom: solid 4px #e4e4e4;
 		}
 
 		table tfoot {
-			border-top: solid 2px #efefef;
+			border-top: solid 4px #e4e4e4;
 		}
 
 		table.alt {
@@ -2294,7 +2368,7 @@
 		}
 
 			table.alt tbody tr td {
-				border: solid 2px #efefef;
+				border: solid 2px #e4e4e4;
 				border-left-width: 0;
 				border-top-width: 0;
 			}
@@ -2314,6 +2388,7 @@
 			table.alt tfoot {
 				border-top: 0;
 			}
+
 
 /* Button */
 
