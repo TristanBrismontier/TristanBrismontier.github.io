@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<link rel="icon" type="image/png" href="images/Cookie_Monster_Emote.png" />
+	<title>Home made Plotter</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta property="og:title" content="Tristan GitHub.io"/>
+
+	<link rel="author" href="https://github.com/TristanBrismontier"/>
+	<meta name="description" content="Tristan Brismontier Github.io experience." />
+	<meta name="keywords" content="Tristan Brismontier" />
+	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+		<section id="header">
+			<header>
+				<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+				<h1 id="logo"><a href="#">Tristan Brismontier</a></h1>
+				<p>I'm Tristan a Java and mobile app developper.</p>
+			</header>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html" class="active">Home</a></li>
+				</ul>
+			</nav>
+			<footer>
+				<ul class="icons">
+					<li><a href="https://github.com/TristanBrismontier" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://www.facebook.com/brismo" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://plus.google.com/106362741981290283927" target="_blank" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+					<li><a href="https://instagram.com/tryystant" target="_blank" class="icon fa-instagram"><span class="label">instagram</span></a></li>
+					<li><a href="http://fr.linkedin.com/pub/brismontier-tristan/75/a66/467" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="http://www.openprocessing.org/user/3568" target="_blank" class="icon fa-empire"><span class="label">OpenProcessing</span></a></li>
+				</ul>
+			</footer>
+		</section>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<!-- One -->
+				<section id="one"><div class="container">
+					<header >
+						<h2>DIY Android Plotter</h2>
+					</header>
+					<h5>Hardware</h5>
+										<p><span class="image left"><img src="images/pre.jpg" alt="" /></span>I found an old printer/scanner, after  disassembly I found two stepper motors. One in the printer system and the other one in the scanner system. The others axis was provided by continous motor slaved by optique sensor. I wanted to only use step motor, so I combined the scanner and printer with a lot of Duck tape ans cardboard. I had got a Android Uno, and used a Arduino Motor Shield R3 for. There is the <a href="" target ="_bland">code</a> for control the steps motors, write in C using Adafruit_MotorShield library. With this code I'm able to send instructions through USB port. </p>
+					<h5>Image analysis</h5>
+										<p><a href="https://instagram.com/p/06ON3wLP40/?taken-by=tryystant" target="_blank"><span class="image right small"><img src="images/Imageanally.jpg" alt="" /></span></a>With the Arduino C code I was only able to add or remove a single step X or Y. In Java/processing I wrote a small code that allows me to go to an XY position to another position. At this point a simple list of XY coordinate was enough to generate a draw. So, I started with a simple Circle Equation : <pre><code>x=cos(t)
+y=sin(t)</code></pre> And that worked in more or less, but I wanted more, I wanted to really  draw something. Thus, I wrote a simple (really simple) image analysis. This algorithm seek the next non-visited pixel, add stack this coordinate in a list. There is a screen preview before to launch the print.</p>
+<h5>Plotter in action</h5>
+<p><iframe src="https://player.vimeo.com/video/131294386" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/131294386">DIY Android Plotter</a> from <a href="https://vimeo.com/user41262141">Tristan Brismontier</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p>
+	<span class="image fit"><img src="images/result.jpg" alt="" /></span>
+</p>
+</p>
+				</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<ul class="copyright">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+		</body>
+		</html>
