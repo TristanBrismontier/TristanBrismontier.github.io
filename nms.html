@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<link rel="icon" type="image/png" href="images/Cookie_Monster_Emote.png" />
+	<title>3D Print - Sentinel No Man's Sky</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta property="og:title" content="Tristan GitHub.io"/>
+
+	<link rel="author" href="https://github.com/TristanBrismontier"/>
+	<meta name="description" content="Tristan Brismontier Github.io experience." />
+	<meta name="keywords" content="Tristan Brismontier" />
+	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+		<section id="header">
+			<header>
+				<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+				<h1 id="logo"><a href="#">Tristan Brismontier</a></h1>
+				<p>I'm Tristan a Java and mobile app developper.</p>
+			</header>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html" class="active">Home</a></li>
+				</ul>
+			</nav>
+			<footer>
+				<ul class="icons">
+					<li><a href="https://github.com/TristanBrismontier" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://www.facebook.com/brismo" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://plus.google.com/106362741981290283927" target="_blank" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+					<li><a href="https://instagram.com/tryystant" target="_blank" class="icon fa-instagram"><span class="label">instagram</span></a></li>
+					<li><a href="http://fr.linkedin.com/pub/brismontier-tristan/75/a66/467" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="http://www.openprocessing.org/user/3568" target="_blank" class="icon fa-empire"><span class="label">OpenProcessing</span></a></li>
+				</ul>
+			</footer>
+		</section>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<!-- One -->
+				<section id="one"><div class="container">
+					<header >
+						<h2>3D Print - Sentinel No Man's Sky</h2>
+					</header>
+					<p>fascinated by No man's sky, and because I wanted to 3D print something pretty complex, I decided to print a sentinel Walker form this game.</p><p>First thing First, I can't do 3D model, I tried but I'm just really bad at this. So the first solution that came to my mind, search in the game directory for models but everything is compiles in big binaries files. the second option was to rip the mesh model from  the game extracting the directX instructions, I knew with <a href="https://software.intel.com/en-us/gpa" target="_blank"> Intel graphics performance analyzers</a> it is possible.</p><p>I realized pretty quickly that it couldn't work, because No Man's Sky use OpenGL library, so this tool will not work. I tried several opengl rip tool but nothing worked.</p><p>Then I found this tool on github : <a href="https://github.com/HugoPeters/NMS-Tools" target="_blank">NMS-Tools</a>  this tool can be used to decompile the Mbin files and view the moodels, but you can export those models to .obj or .stl files. But a good news is that  NMS-Tool use the DirectX library to render the models. So by using <a href="https://software.intel.com/en-us/gpa" target="_blank"> Intel graphics performance analyzers</a>, I was to able to export the sentinel walker model to a .obj.</p><p>After cuting the model in three parts with blender, to print separatly body and legs, et Voila:</p> <span class="image fit"><img src="images/sentinel.jpg" alt="" /></span><p>Bonus (apparently this model's name is Grunt):</p><span class="image fit"><img src="images/grunt.jpg" alt="" /></span>
+										
+				</section>
+
+				<!-- Footer --><img src="images/tree.png" alt="" />
+				<section id="footer">
+					<div class="container">
+						<ul class="copyright">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+		</body>
+		</html>
