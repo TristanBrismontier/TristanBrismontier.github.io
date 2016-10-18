@@ -15,6 +15,7 @@
 	<meta name="description" content="Tristan Brismontier Github.io experience." />
 	<meta name="keywords" content="Tristan Brismontier" />
 	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+	<meta property="og:image" content="images/sentinel.jpg" />
 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -56,7 +57,7 @@
 				<!-- One -->
 				<section id="one"><div class="container">
 					<header >
-						<h2>3D Print - Sentinel No Man's Sky</h2>
+						<h2>3D Print - Sentinel of No Man's Sky</h2>
 					</header>
 					<p>fascinated by No man's sky, and because I wanted to 3D print something pretty complex, I decided to print a sentinel Walker form this game.</p><p>First thing First, I can't do 3D model, I tried but I'm just really bad at this. So the first solution that came to my mind, search in the game directory for models but everything is compiles in big binaries files. the second option was to rip the mesh model from  the game extracting the directX instructions, I knew with <a href="https://software.intel.com/en-us/gpa" target="_blank"> Intel graphics performance analyzers</a> it is possible.</p><p>I realized pretty quickly that it couldn't work, because No Man's Sky use OpenGL library, so this tool will not work. I tried several opengl rip tool but nothing worked.</p><p>Then I found this tool on github : <a href="https://github.com/HugoPeters/NMS-Tools" target="_blank">NMS-Tools</a>  this tool can be used to decompile the Mbin files and view the moodels, but you can export those models to .obj or .stl files. But a good news is that  NMS-Tool use the DirectX library to render the models. So by using <a href="https://software.intel.com/en-us/gpa" target="_blank"> Intel graphics performance analyzers</a>, I was to able to export the sentinel walker model to a .obj.</p><p>After cuting the model in three parts with blender, to print separatly body and legs, et Voila:</p> <span class="image fit"><img src="images/sentinel.jpg" alt="" /></span><p>Bonus (apparently this model's name is Grunt):</p><span class="image fit"><img src="images/grunt.jpg" alt="" /></span>
 										
